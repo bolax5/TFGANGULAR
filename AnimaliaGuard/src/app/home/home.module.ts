@@ -4,6 +4,7 @@ import { HomeComponent } from './home/home.component';
 import { LoginComponent } from './login/login.component';
 import { SignInComponent } from './sign-in/sign-in.component';
 import { SharedModule } from '../shared/shared.module';
+import { CoreModule } from '../core/core.module';
 
 @NgModule({
   imports: [
@@ -14,6 +15,9 @@ import { SharedModule } from '../shared/shared.module';
     LoginComponent,
     SignInComponent
   ],
-  declarations: [HomeComponent, LoginComponent, SignInComponent]
+  declarations: [HomeComponent, LoginComponent, SignInComponent],
+  providers: [
+    CoreModule
+  ]
 })
 export class HomeModule { }
