@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 enum ENDPOINTS {
-  '/login' = 'http://164.132.56.50:4444/login'
+  '/login' = 'http://164.132.56.50:3000/login'
  }
 @Injectable({
   providedIn: 'root'
