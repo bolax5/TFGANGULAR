@@ -20,6 +20,7 @@ export class LoginComponent implements OnInit {
       password: ['', Validators.required]
     });
   }
+
   submit() {
     this.loginForm.valid ? console.log('chachi') : console.log('no chachi');
     this.http.post('/login', this.loginForm.value).subscribe(this.ok, this.noOk);
